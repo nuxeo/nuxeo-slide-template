@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Create your Nuxeo slides</title>
+	
+	<meta name="description" content="Nuxeo slides - Create your own set">
+	<meta name="author" content="Nuxeo">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="deck.js/core/deck.core.css">
+	<link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="deck.js/extensions/scale/deck.scale.css">
+	
+	<!-- Nuxeo Slide Default theme -->
+	<link rel="stylesheet" href="themes/style/nuxeo-theme.css">
+	
+	<!-- Nuxeo Slide with comments theme -->
+	<link rel="stylesheet" href="themes/style/nuxeo-theme-with-comments.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/nuxeo-transition.css">
+	
+	<script src="deck.js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Nuxeo Logo Training -->
+<div class="nuxeo-logo">
+  <span class="nuxeo">nuxeo</span>
+  <span class="slash">/</span>
+  <span class="sub-part training">Trainings</span>
+</div>
+
+<!-- Begin slides -->
+<section class="slide" id="nuxeo-slides">
+	<h1>Nuxeo Slides - Create your own set</h1>
+	<h6>Author 1 &amp; Author 2 &copy; 2012 - Nuxeo</h6>
+</section>
+
+<section class="slide" id="table-of-contents">
+	<h3>Table of Contents</h3>
+	<ul>
+		<li><a href="#before-starting">Small things to know before starting</a></li>
+		<li><a href="#write-slide">How to write a slide</a></li>
+		<li><a href="#design-layout">How to design a layout</a></li>
+		<li><a href="#exercise">Exercises</a></li>
+	</ul>
+</section>
+
+<section class="slide" id="before-starting">
+	<h3>Small things to know before starting</h3>
+	<p>You need to follow a list of simple rules to keep consistency in all the Nuxeo Training slides.</p>
+	<ul>
+	  <li>Each slide need to have the <code>class="slide"</code> on the <code>section</code> tag,</li>
+	  <li>And each slide need to have an <code>ID</code> to have a unique URL.</li>
+	  <li>Write it in lowercase, as you can see in the URL <code>id="before-starting"</code>.</li>
+	  <li>Always start your slides with an <a href="#nuxeo-slides">opening slide</a></li>
+	  <li>and end it with the <a href="#thank-you">ending one</a>.</li>
+	  <li>Try to always be precise and concise</li>
+	  <li>Don't hesitate to add <a href="#table-of-contents">links from a slide to another</a>, thanks to anchors.</li>
+	</ul>
+</section>
+
+<section class="slide" id="write-slide">
+	<h2>How to write a slide</h2>
+</section>
+
+<section class="slide" id="titles">
+	<h3>Titles - The <code>h3</code> title is mandatory in each slide</h3>
+	<ul>
+		<li>The <code>h1</code> is only used for the <a href="#nuxeo-slides">opening slide</a>. It's the strong black title.</li>
+		<li>The <code>h2</code> is only used for the <a href="#write-slide">separation slides</a>. It's the strong blue title.</li>
+		<li>The <code>h6</code> is only used to display <a href="#nuxeo-slides">author's names</a> on a yellow background.</li>
+	</ul>
+	<h4>Use the <code>h4 title</code> to structure your slide</h4>
+	<p>Example to see the result of the title with a paragraph </p>
+	<h5>Use the <code>h5</code> if you will have many titles in one slide</h5>
+  <p>Example to see the result of the title with a paragraph </p>
+</section>
+
+<section class="slide" id="content-with-paragraphs">
+	<h3>Content with paragraphs</h3>
+	<p>Nuxeo Enterprise Platform helps you build <span class="bold">Content Applications</span>
+	 to effectively manage your <span class="bold">Content</span>, but what does this mean?</p>
+	<h4>Content</h4>
+	<p>Any information or knowledge, structured or semi-structured, 
+	that you are dealing with in your business activity. Documents, Product Specifications, 
+	Invoices, Media, Cases, Standards, Specifications, Quotes ...</p>
+	<h4>Content Applications</h4>
+	<p>The software that you and your users use to manage and collaborate on content. 
+	It can be any business application. Document Management, Digital Asset Management and 
+	Case Management are obvious examples, but it could also be an Invoicing application, e-Learning, 
+	Catalogs, News and Editorial systems ... </p>
+</section>
+
+<section class="slide" id="lists-and-sticker">
+  <div class="sticker">
+    A div class <code>sticker</code> before the title of your slide to display it ;)
+  </div>
+	<h3>Simple text slide</h3>
+	<p>After each <code>h3</code> title of the slides, you can write a paragraph <code>p</code>. Please do not use the <code>br</code> tag, add another paragraph instead. 
+	<p>To make something <span class="bold">bold</span>, add a <code>span class="bold"</code> around your words.</p>
+	<ul>
+		<li>Oh wait! A <code>ul</code> list here</li>
+		<li>with bullets </li>
+		  <ul>
+		    <li>with a nested <code>ul</code> in it</li>
+		    <li>with circles</li>
+		  </ul>
+	</ul>
+	<ol>
+	  <li>and a <code>ol</code> list</li>
+	  <li>with numbers.</li>
+	</ol>
+</section>
+
+<section class="slide" id="code-sample">
+	<h3>Code sample</h3>
+	<p>Code sample with <code>pre</code> + <code>code</code> tags.</p>
+		<pre><code>&lt;section class=&quot;slide&quot;&gt;
+  &lt;h3&gt;How to Make a Deck&lt;/h3&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;h4&gt;Write Slides&lt;/h4&gt;
+        &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/section&gt;</code></pre>
+</section>
+
+<section class="slide" id="slides-with-comments">
+	<h3>Complete your slides with comments</h3>
+	<p>Once your training is over, you may want to give to your trainees your slides with <span class="bold">additionnal info</span>, tips &amp; tricks. But you don't want to make it visible during the training to <span class="bold">not saturate</span> each slide with too many info.</p>
+	<p>Follow these steps to have 2 modes in your slides :</p>
+	<ol>
+	  <li>Write your comments in a <code>div class="further-info"</code></li>
+	  <li>This class will display your div by default</li>
+	  <li>Comment the <code>nuxeo-theme-with-comments.css</code> line in the <code>head</code> tag</li>
+	  <li>Your comments are invisible now :)</li>
+	</ol>
+	<p class="further-info">Check if your comments are on or off before starting your training!</p>
+</section>
+
+<section class="slide" id="design-layout">
+	<h2>How to design a layout</h2>
+</section>
+
+<section class="slide" id="two-halves-layout">
+	<h3>Two halves layout</h3>
+	<p class="further-info">The content is separated in two <code>div class="split-box"</code>. Add the <code>split-50</code> class on each div to get a 50% - 50% layout.</p>
+	<div class="split-box split-50">
+		<ul>
+			<li>Creation of documents via form</li>
+			<li>Drag’n drop in the browser : smart , with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
+			<li>Drag’n Drop from a mounted network Drive</li>
+			<li>Bulk Importer</li>
+			<li>Mail fetching (Mail folder)</li>
+			<li>Ability to add attachment on Files tab, and to use Drag’n drop for this</li>
+		</ul>
+  </div>
+  <div class="split-box split-50">
+    <img src="http://placekitten.com/600/375" alt="Kitties">
+  </div>
+</section>
+
+<section class="slide" id="63-37-layout">
+	<h3>Two part layout (1/2)</h3>
+	<p class="further-info">Add a <code>split-63</code> class on a div and <code>split-37</code> on the other to get a 63% - 37% layout.</p>
+	<div class="split-box split-63">
+		<ul>
+			<li>Creation of documents via form</li>
+			<li>Drag’n drop in the browser : smart , with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
+			<li>Drag’n Drop from a mounted network Drive</li>
+			<li>Bulk Importer</li>
+			<li>Mail fetching (Mail folder)</li>
+			<li>Ability to add attachment on Files tab, and to use Drag’n drop for this</li>
+		</ul>
+  </div>
+  <div class="split-box split-37">
+    <img src="http://placekitten.com/600/375" alt="Kitties">
+  </div>
+</section>
+
+<section class="slide" id="75-25-layout">
+	<h3>Two part layout (2/2)</h3>
+	<p class="further-info">Add a <code>split-75</code>  class on a div and <code>split-25</code> on the other to get a 75% - 25% layout.</p>
+	<div class="split-box split-75">
+		<ul>
+			<li>Creation of documents via form</li>
+			<li>Drag’n drop in the browser : smart , with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
+			<li>Drag’n Drop from a mounted network Drive</li>
+			<li>Bulk Importer</li>
+			<li>Mail fetching (Mail folder)</li>
+			<li>Ability to add attachment on Files tab, and to use Drag’n drop for this</li>
+		</ul>
+  </div>
+  <div class="split-box split-25">
+    <img src="http://placekitten.com/600/375" alt="Kitties">
+    <img src="http://placekitten.com/600/375" alt="Kitties">
+  </div>
+</section>
+
+<section class="slide" id="image-left-layout">
+  <h3>Create paragraphs with pictures</h3>
+  <p class="further-info">In a <code>div class="text-and-illus"</code>, add an <code>img class="float-left"</code>, then a <code>h5</code> title and a <code>p</code> paragraph.</p>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-left max-size-100">
+    <h5>Nuxeo CAP / Nuxeo EP</h5>
+    <p>Content Application Platform designed to be extended and
+    customized to develop effective business applications</p>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-left max-size-100">
+    <h5>Nuxeo DM</h5>
+    <p>Collaborative Document Management Solution to help 
+    you manage your business content efficiently </p>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-left max-size-100">
+    <h5>Nuxeo DAM</h5>
+    <p>Make the best of your media assets. A solution to streamline</p>
+  </div>
+</section>
+
+<section class="slide" id="staggered-layout">
+  <h3>Staggered layout</h3>
+  <p class="further-info">You can alternate with a <code>class="float-right"</code> instead of the <code>float-left</code> in your picture</p>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-left max-size-100">
+    <h5>Nuxeo CAP / Nuxeo EP</h5>
+    <p>Content Application Platform designed to be extended and
+    customized to develop effective business applications</p>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-100">
+    <h5>Nuxeo DM</h5>
+    <p>Collaborative Document Management Solution to help 
+    you manage your business content efficiently </p>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-left max-size-100">
+    <h5>Nuxeo DAM</h5>
+    <p>Make the best of your media assets. A solution to streamline</p>
+  </div>
+</section>
+
+<section class="slide" id="image-right-layout">
+  <h3>Images on the right side</h3>
+  <p class="further-info">Or only use <code>class="float-right"</code> to align all your pictures to the right.</p>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-100">
+    <h5>Nuxeo CAP / Nuxeo EP</h5>
+    <p>Content Application Platform designed to be extended and
+    customized to develop effective business applications</p>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-100">
+    <h5>Nuxeo DM</h5>
+    <p>Collaborative Document Management Solution to help 
+    you manage your business content efficiently </p>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-100">
+    <h5>Nuxeo DAM</h5>
+    <p>Make the best of your media assets. A solution to streamline</p>
+  </div>
+</section>
+
+<section class="slide" id="image-size">
+  <h3>Image size</h3>
+  <p class="further-info">To control pictures widths, add after the <code>float-*</code> class a <code>class="max-size-*"</code> to them. Available values are 50, 100, 150, 200 &amp; 300.</p>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-100">
+    <h5>Image class max-size-100</h5>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-150">
+    <h5>Image class max-size-150</h5>
+  </div>
+  <div class="text-and-illus">
+    <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-200">
+    <h5>Image class max-size-200</h5>
+  </div>
+</section>
+
+<section class="slide" id="full-screen-image">
+	<h3>Full screen images</h3>
+	<img src="http://placekitten.com/600/375" alt="Kitties">
+	<pre><code>You can use the pre+code tags to write a small legend here.</code></pre>
+	<blockquote cite="http://example.org">
+		<p>Or you may want to add a blockquote.</p>
+		<p><cite>Lise Kemen</cite></p>
+	</blockquote>
+</section>
+
+<section class="slide" id="full-screen-video">
+	<h3>Full screen videos</h3>
+	<iframe width="750" scrolling="no" height="422" frameborder="0" name="wistia_embed" class="wistia_embed" allowtransparency="true" src="http://fast.wistia.com/embed/iframe/e8a29001dc?videoWidth=750&amp;videoHeight=422&amp;controlsVisibleOnLoad=true"></iframe>
+	<p class="further-info">Or you can add a comment to hide</p>
+</section>
+
+<section class="slide" id="exercices">
+	<h2>Exercises</h2>
+</section>
+
+<section class="slide exercise" id="exercise-1-2">
+  <img src="themes/exercise.svg" alt="exercise" class="exercise-icon">
+	<h3>Exercise theme (1/2)</h3>
+	<p>Add the class <code>class="slide exercise"</code> to the section to display the exercise theme.</p>
+	<ol>
+		<li>Be nice with your trainees,</li>
+		<li>use an <code>ol</code> list type for the exercises,</li>
+		<li>to help them find their way when you speak.</li>
+		<li>If you say slide # point 2,</li>
+		<li>it's easier to find it with the number next to it,</li>
+		<li>rather than simple bullets.</li>
+	</ol>
+	<p>If you have many slides for an exercise, please add the <span class="bold">status numbers</span> in the <code>h3</code> title and add it in the <code>id</code> of your slide, to get <span class="bold">unique anchors</span> for your links.</p>
+</section>
+
+<section class="slide" id="animations">
+	<h3>Animation</h3>
+	<p>To animate something, just add the class <code>slide</code> to your container.  It can be a <code>div</code>, a <code>li</code>, ...</p>
+	<ul>
+		<li class="slide" id="you-see"><p>
+			You see ?
+		</li>
+		<li class="slide" id="it-s-fabulous"><p>
+			It's fabulous!
+		</li>
+	</ul>
+	<p class="slide" id="dont-overuse-it">But don't over use it. It changes the <code>ID</code> of the slide, so it can become  incomprehensible very quickly. </p>
+</section>
+
+<section class="slide" id="thank-you">
+	<h2>Don't forget the closing slide saying Thank you!</h2>
+	<h6>Author 1 &amp; Author 2 &copy; 2012 - Nuxeo</h6>
+</section>
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="deck.js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="deck.js/core/deck.core.js"></script>
+<script src="deck.js/extensions/hash/deck.hash.js"></script>
+<script src="deck.js/extensions/menu/deck.menu.js"></script>
+<script src="deck.js/extensions/goto/deck.goto.js"></script>
+<script src="deck.js/extensions/status/deck.status.js"></script>
+<script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src="deck.js/extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
