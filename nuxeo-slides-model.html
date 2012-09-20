@@ -63,13 +63,13 @@
 	<h3>Small things to know before starting</h3>
 	<p>You need to follow a list of simple rules to keep consistency in all the Nuxeo Training slides.</p>
 	<ul>
-	  <li>Each slide need to have the <code>class="slide"</code> on the <code>section</code> tag,</li>
-	  <li>And each slide need to have an <code>ID</code> to have a unique URL.</li>
-	  <li>Write it in lowercase, as you can see in the URL <code>id="before-starting"</code>.</li>
+	  <li>Each slide is a <code>section</code> and needs to have the <code>class="slide"</code></li>
+	  <li>and each slide needs to have an <code>id</code> to have a unique URL</li>
+	  <li>The <code>id</code> must be in lowercase letters, as you can see in the current URL <code>before-starting</code></li>
 	  <li>Always start your slides with an <a href="#nuxeo-slides">opening slide</a></li>
-	  <li>and end it with the <a href="#thank-you">ending one</a>.</li>
+	  <li>and end it with an <a href="#thank-you">ending one</a></li>
 	  <li>Try to always be precise and concise</li>
-	  <li>Don't hesitate to add <a href="#table-of-contents">links from a slide to another</a>, thanks to anchors.</li>
+	  <li>Don't hesitate to add <a href="#table-of-contents">links from a slide to another</a>, thanks to anchors</li>
 	</ul>
 </section>
 
@@ -80,14 +80,14 @@
 <section class="slide" id="titles">
 	<h3>Titles - The <code>h3</code> title is mandatory in each slide</h3>
 	<ul>
-		<li>The <code>h1</code> is only used for the <a href="#nuxeo-slides">opening slide</a>. It's the strong black title.</li>
-		<li>The <code>h2</code> is only used for the <a href="#write-slide">separation slides</a>. It's the strong blue title.</li>
-		<li>The <code>h6</code> is only used to display <a href="#nuxeo-slides">author's names</a> on a yellow background.</li>
+		<li>The <code>h1</code> title is only used for the <a href="#nuxeo-slides">opening slide</a>. It's the strong black title.</li>
+		<li>The <code>h2</code> title is only used for the <a href="#write-slide">separation slides</a>. It's the strong blue title.</li>
+		<li>The <code>h6</code> title is only used to display <a href="#nuxeo-slides">author's names</a> on a yellow background.</li>
 	</ul>
 	<h4>Use the <code>h4 title</code> to structure your slide</h4>
-	<p>Example to see the result of the title with a paragraph </p>
-	<h5>Use the <code>h5</code> if you will have many titles in one slide</h5>
-  <p>Example to see the result of the title with a paragraph </p>
+	<p>Example to see the result of the title with a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+	<h5>Use the <code>h5</code> title if you will have many titles in one slide</h5>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </section>
 
 <section class="slide" id="content-with-paragraphs">
@@ -107,17 +107,16 @@
 
 <section class="slide" id="lists-and-sticker">
   <div class="sticker">
-    A div class <code>sticker</code> before the title of your slide to display it ;)
+    Use the div class <code>sticker</code> before your slide's h3 title to display a note like this ;)
   </div>
 	<h3>Simple text slide</h3>
 	<p>After each <code>h3</code> title of the slides, you can write a paragraph <code>p</code>. Please do not use the <code>br</code> tag, add another paragraph instead. 
 	<p>To make something <span class="bold">bold</span>, add a <code>span class="bold"</code> around your words.</p>
+	<p>Use the <code>code</code> tag to make your code elements <code>visibly separated</code> from the rest of the text.</p>
 	<ul>
-		<li>Oh wait! A <code>ul</code> list here</li>
-		<li>with bullets </li>
+		<li>Oh wait! A <code>ul</code> list here, with bullets</li>
 		  <ul>
-		    <li>with a nested <code>ul</code> in it</li>
-		    <li>with circles</li>
+		    <li>with a nested <code>ul</code> in it, with circles</li>
 		  </ul>
 	</ul>
 	<ol>
@@ -142,13 +141,13 @@
 
 <section class="slide" id="slides-with-comments">
 	<h3>Complete your slides with comments</h3>
-	<p>Once your training is over, you may want to give to your trainees your slides with <span class="bold">additionnal info</span>, tips &amp; tricks. But you don't want to make it visible during the training to <span class="bold">not saturate</span> each slide with too many info.</p>
+	<p>Once your training is over, you may want to give your slides to your trainees, with <span class="bold">additionnal info</span>, tips & tricks. But you don't want to make them visible during the training, so the slides are <span class="bold">not saturate</span> with too much info.
 	<p>Follow these steps to have 2 modes in your slides :</p>
 	<ol>
 	  <li>Write your comments in a <code>div class="further-info"</code></li>
 	  <li>This class will display your div by default</li>
 	  <li>Comment the <code>nuxeo-theme-with-comments.css</code> line in the <code>head</code> tag</li>
-	  <li>Your comments are invisible now :)</li>
+	  <li>Your comments are now invisible :)</li>
 	</ol>
 	<p class="further-info">Check if your comments are on or off before starting your training!</p>
 </section>
@@ -157,13 +156,13 @@
 	<h2>How to design a layout</h2>
 </section>
 
-<section class="slide" id="two-halves-layout">
-	<h3>Two halves layout</h3>
+<section class="slide" id="50-50-layout">
+	<h3>Two column layout (1/3)</h3>
 	<p class="further-info">The content is separated in two <code>div class="split-box"</code>. Add the <code>split-50</code> class on each div to get a 50% - 50% layout.</p>
 	<div class="split-box split-50">
 		<ul>
 			<li>Creation of documents via form</li>
-			<li>Drag’n drop in the browser : smart , with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
+			<li>Drag’n drop in the browser : smart, with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
 			<li>Drag’n Drop from a mounted network Drive</li>
 			<li>Bulk Importer</li>
 			<li>Mail fetching (Mail folder)</li>
@@ -176,12 +175,12 @@
 </section>
 
 <section class="slide" id="63-37-layout">
-	<h3>Two part layout (1/2)</h3>
+	<h3>Two column layout (2/3)</h3>
 	<p class="further-info">Add a <code>split-63</code> class on a div and <code>split-37</code> on the other to get a 63% - 37% layout.</p>
 	<div class="split-box split-63">
 		<ul>
 			<li>Creation of documents via form</li>
-			<li>Drag’n drop in the browser : smart , with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
+			<li>Drag’n drop in the browser : smart, with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
 			<li>Drag’n Drop from a mounted network Drive</li>
 			<li>Bulk Importer</li>
 			<li>Mail fetching (Mail folder)</li>
@@ -194,12 +193,12 @@
 </section>
 
 <section class="slide" id="75-25-layout">
-	<h3>Two part layout (2/2)</h3>
+	<h3>Two column layout (3/3)</h3>
 	<p class="further-info">Add a <code>split-75</code>  class on a div and <code>split-25</code> on the other to get a 75% - 25% layout.</p>
 	<div class="split-box split-75">
 		<ul>
 			<li>Creation of documents via form</li>
-			<li>Drag’n drop in the browser : smart , with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
+			<li>Drag’n drop in the browser : smart, with metadata on HTML 5 compliant browsers, otherwise, Desktop plugin to setup</li>
 			<li>Drag’n Drop from a mounted network Drive</li>
 			<li>Bulk Importer</li>
 			<li>Mail fetching (Mail folder)</li>
@@ -236,7 +235,7 @@
 
 <section class="slide" id="staggered-layout">
   <h3>Staggered layout</h3>
-  <p class="further-info">You can alternate with a <code>class="float-right"</code> instead of the <code>float-left</code> in your picture</p>
+  <p class="further-info">You can alternate with a <code>class="float-right"</code> instead of the <code>float-left</code> in your picture.</p>
   <div class="text-and-illus">
     <img src="http://placekitten.com/600/375" alt="Kitties" class="float-left max-size-100">
     <h5>Nuxeo CAP / Nuxeo EP</h5>
@@ -280,7 +279,7 @@
 
 <section class="slide" id="image-size">
   <h3>Image size</h3>
-  <p class="further-info">To control pictures widths, add after the <code>float-*</code> class a <code>class="max-size-*"</code> to them. Available values are 50, 100, 150, 200 &amp; 300.</p>
+  <p class="further-info">Control the picture's width by adding a <code>max-size-*</code> class after the <code>float-*</code> class. Available values are 50, 100, 150, 200 &amp; 300.</p>
   <div class="text-and-illus">
     <img src="http://placekitten.com/600/375" alt="Kitties" class="float-right max-size-100">
     <h5>Image class max-size-100</h5>
