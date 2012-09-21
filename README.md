@@ -21,3 +21,6 @@ Open nuxeo-slides-model.html file in your favorite browser :)
 ## Extensions
 Some extensions light be useful to help you write your slide set.
 Check the full list of extensions in the [deck.js wiki page](https://github.com/imakewebthings/deck.js/wiki).
+
+## Export PDF
+Once your slide set is ready, please use the [deck2pdf](https://github.com/imakewebthings/deck2pdf) converter if you want to generate a PDF version.
