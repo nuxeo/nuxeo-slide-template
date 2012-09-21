@@ -1,11 +1,11 @@
 Nuxeo slide template
 ==========================
 
-Slide template sample for Nuxeo presentations based on deck.js.
+Slide template sample for Nuxeo presentations based on [deck.js](https://github.com/imakewebthings/deck.js).
 
 ## How to try out the presentation sample
 
-deck.js is mandatory in a subfolder "deck.js" of this project. You can either clone it from the github repository or download it.
+[deck.js](https://github.com/imakewebthings/deck.js) is mandatory in a subfolder "deck.js" of this project. You can either clone it from the [github repository](https://github.com/imakewebthings/deck.js) or [download it](http://imakewebthings.com/deck.js/).
 
 ### Clone deck.js
     git clone https://github.com/imakewebthings/deck.js.git
@@ -16,7 +16,8 @@ deck.js is mandatory in a subfolder "deck.js" of this project. You can either cl
 - rename the root folder to deck.js
 
 ### Try out the presentation
-Open nuxeo-slides-model.html file in your favourite browser !!!
+Open nuxeo-slides-model.html file in your favorite browser :)
 
-
-
+## Extensions
+Some extensions light be useful to help you write your slide set.
+Check the full list of extensions in the [deck.js wiki page](https://github.com/imakewebthings/deck.js/wiki)
