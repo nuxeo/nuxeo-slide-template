@@ -20,4 +20,4 @@ Open nuxeo-slides-model.html file in your favorite browser :)
 
 ## Extensions
 Some extensions light be useful to help you write your slide set.
-Check the full list of extensions in the [deck.js wiki page](https://github.com/imakewebthings/deck.js/wiki)
+Check the full list of extensions in the [deck.js wiki page](https://github.com/imakewebthings/deck.js/wiki).
