@@ -5,10 +5,11 @@ Slide template sample for Nuxeo presentations based on [deck.js](https://github.
 
 ## How to try out the presentation sample
 
-[deck.js](https://github.com/imakewebthings/deck.js) is mandatory in a subfolder "deck.js" of this project. You can either clone it from the [github repository](https://github.com/imakewebthings/deck.js) or [download it](http://imakewebthings.com/deck.js/).
+[deck.js](https://github.com/imakewebthings/deck.js) is used as a submodule of this project in "deck.js" folder. You can either use it or clone it from the [github repository](https://github.com/imakewebthings/deck.js) or [download it](http://imakewebthings.com/deck.js/).
 
-### Clone deck.js
-    git clone https://github.com/imakewebthings/deck.js.git
+### Use submodule deck.js
+    $ git submodule init
+    $ git submodule update
 
 ### Or download deck.js
 - download from https://github.com/imakewebthings/deck.js/zipball/stable
