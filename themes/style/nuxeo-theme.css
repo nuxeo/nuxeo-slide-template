@@ -420,3 +420,23 @@ Based on the deck.js web-2.0.css theme
 /* Img center + paragraph */
 
 /* Test transition schema */
+
+/* Tooltip */
+.tooltip {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #aaa;
+  color: #000;
+  display: none;
+  font-weight: normal;
+  padding: .6em .8em .8em;
+  white-space: normal;
+  z-index: 2000
+}
+
+.deck-container .tooltip-kat {
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}

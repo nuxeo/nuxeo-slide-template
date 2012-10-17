@@ -149,6 +149,10 @@
     <li>Comment the <code>nuxeo-theme-with-comments.css</code> line in the <code>head</code> tag</li>
     <li>Your comments are now invisible :)</li>
   </ol>
+  <img src="./ui-data/konamikat.gif" class="tooltip-kat" />
+  <div class="tooltip">
+    And you can even add tooltips! :)
+  </div>
   <p class="further-info">Check if your comments are on or off before starting your training!</p>
 </section>
 
@@ -384,10 +388,16 @@
 <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
 <script src="deck.js/extensions/scale/deck.scale.js"></script>
 
-<!-- Initialize the deck -->
+<!-- JQuery tooltip library -->
+<script src="scripts/jquery.tools.tooltip.min.js"></script>
+
+<!-- Initialize the deck and tooltips -->
 <script>
 $(function() {
   $.deck('.slide');
+});
+jQuery(document).ready(function() {
+  jQuery(".tooltip-kat").tooltip({relative: true, position: 'top right'});
 });
 </script>
 
