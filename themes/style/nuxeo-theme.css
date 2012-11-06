@@ -414,23 +414,19 @@ Based on the deck.js web-2.0.css theme
 
 .deck-container .further-info {	display: none; }
 
-
-/* Img center + paragraph */
-
-/* Test transition schema */
-
 /* Tooltip */
-.tooltip {
-  background-color: #fff;
-  border: 1px solid #bbb;
+.deck-container .tooltip {
+  background-color: #002259;
+  border: 2px solid #f9b34e;
   border-radius: 6px;
-  box-shadow: 0 0 3px #aaa;
-  color: #000;
+  box-shadow: 1px 2px 5px #555;
+  color: white;
   display: none;
   font-weight: normal;
-  padding: .6em .8em .8em;
+  padding: .6em .8em .7em;
   white-space: normal;
-  z-index: 2000
+  text-shadow: none;
+  z-index: 2000;
 }
 
 .deck-container .tooltip-kat {
