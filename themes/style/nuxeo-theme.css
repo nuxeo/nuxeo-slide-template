@@ -394,7 +394,7 @@ Based on the deck.js web-2.0.css theme
 /* Exercice theme */
 .deck-container .exercise .exercise-icon {
 	float: right;
-	height: 100%;
+	height: 15%;
 	margin-top: -1em;
 	width: 10%; }
 
