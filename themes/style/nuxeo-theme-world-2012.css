@@ -83,6 +83,7 @@ Based on the Default
   padding-left: 450px;
   text-align: left;
   box-shadow: 4px 0 10px rgba(0,0,0,0.3);
+  position:relative;
 }
 
  #nuxeo-slides h2 {
@@ -94,24 +95,24 @@ Based on the Default
   text-align: left;
   background-color: none !important;
   box-shadow: none;
+  position:relative;
 }
 
 .deck-container #nuxeo-slides h2 {
   background-color: transparent;
+  margin:0;
+  position:relative;
+  top:300px;
 }
 
 .deck-container .slide h6 {
-  background-color: transparent;
+  background-color:transparent;
   color:#a0c8c8;
-  font-size: 0.6em;
-  font-weight: bold;
-  text-align: center;
-  padding-left: 450px;
-  text-align: left;
-  position:absolute;
-  top:50%;
-  margin-top:105px;
-  left:0;
+  font-size: .6em;
+  font-weight:bold;
+  position:relative;
+  top:380px;
+  z-index:1000;
 }
 
 #arty1 {
