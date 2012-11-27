@@ -414,6 +414,10 @@ Based on the deck.js web-2.0.css theme
 
 .deck-container .further-info {	display: none; }
 
+@media print {
+  .deck-container .further-info { display: block; }
+}
+
 /* Tooltip */
 .deck-container .tooltip {
   background-color: #002259;
