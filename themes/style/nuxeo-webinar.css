@@ -1,0 +1,102 @@
+/* -- 
+Nuxeo Techonoly webinar - 2013
+Based on the Default
+=nuxeo world specific => specific rules for nuxeo world's need
+-- */
+
+/* =nuxeo world specific */
+
+/* Background color */
+
+.on-slide-nuxeo-slides, .on-slide-thank-you {
+
+/* SVG fallback(Opera 11.10-, IE9) */
+background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjpyZ2JhKDEzNyw4NiwxNTQsMSk7IiAvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6cmdiYSgwLDE2NSwyMTMsMSk7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);
+
+/* Opera 11.10+ */
+background: -o-linear-gradient(top, rgba(137,86,154,1), rgba(0,165,213,1));
+
+/* Firefox 3.6+ */
+background: -moz-linear-gradient(top, rgba(137,86,154,1), rgba(0,165,213,1));
+
+/* Chrome 7+ & Safari 5.03+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(137,86,154,1)), color-stop(1, rgba(0,165,213,1)));
+
+/* IE5.5 - IE7 */
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF89569A,EndColorStr=#FF00A5D5);
+
+/* IE8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FF89569A,EndColorStr=#FF00A5D5)";
+
+}
+
+#nuxeo-slides, #thank-you {
+  background:url(../images/outline-background.png) center center no-repeat;
+}
+
+.deck-container .nuxeo-logo .slash {
+  background: url(../images/webinar-headset.png) top left no-repeat;
+  width:32px;
+  height:32px;
+  display:inline-block;
+  margin-bottom:-12px;
+}
+
+/* brickon each slide */
+
+.deck-container .nuxeo-dev-logo {
+  bottom: 0;
+  color: #000;
+  font-size: .5em;
+  font-weight: bold;
+  margin: 0;
+  right: 5px;
+  z-index: 3;
+  position: fixed;
+  background: url(../images/brick-alone.png) top left no-repeat;
+  width:90px;
+  height:53px;
+}
+
+body.on-slide-nuxeo-slides .nuxeo-dev-logo, body.on-slide-nuxeo-slides .deck-status, body.on-slide-nuxeo-slides .nuxeo-logo, body.on-slide-thank-you .nuxeo-dev-logo, body.on-slide-thank-you .deck-status, body.on-slide-thank-you .nuxeo-logo {
+  display: none;
+}
+
+.deck-container .deck-status {
+    bottom: 10px;
+    font-size: 0.4em;
+    right: 103px;
+    color:rgba(100,100,100,0.8);
+}
+
+.slash span {display:none;}
+
+/* Title */
+
+#nuxeo-slides h1, #thank-you h2 {
+  background-color: yellow;
+  margin: 0 1.5em;
+  padding: 0.3em 0;
+  border:2px outset #fcde24;
+  color:black;  
+}
+
+.csstransforms #nuxeo-slides h1, .csstransforms #nuxeo-slides .vcenter, 
+.csstransforms #thank-you h2 {
+  top:35%;
+}
+
+/* Authors */
+
+.deck-container #nuxeo-slides h6, .deck-container #thank-you h6 {
+  text-align:center;
+  display:inline-block;
+  background-color: rgba(255,255,255,0.4);
+  padding:2em;
+  position: absolute;
+  top:55%;
+  width:30%;
+  left:50%;
+  margin-left:-20%;
+  font-size: 0.5em;
+  }
