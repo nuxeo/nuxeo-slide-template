@@ -284,6 +284,13 @@ Based on the deck.js web-2.0.css theme
 .text-and-illus img.float-left { margin: 0 .5em .5em 0; }
 .text-and-illus img.float-right { margin: 0 0 .5em .5em; }
 
+/* Customers logos display */
+.dovetail img {
+  float: left;
+  margin: .2em .3em .5em;
+  max-height: 3.3em;
+  max-width: 6.9em; }
+
 /* Grid */
 .split-box {
   display: block;
