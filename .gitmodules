@@ -1,5 +1,5 @@
 [submodule "deck.js"]
 	path = deck.js
 	url = https://github.com/nuxeo-sandbox/deck.js.git
-[submodules "deck.js"]
 	branch = master
+
