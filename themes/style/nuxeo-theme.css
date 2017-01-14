@@ -445,3 +445,11 @@ Based on the deck.js web-2.0.css theme
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+pre .bold {
+  font-weight: bold;
+}
+
+pre .highlight {
+  background-color: lemonchiffon;
+}
